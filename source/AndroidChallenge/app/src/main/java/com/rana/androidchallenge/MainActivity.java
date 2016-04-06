@@ -53,7 +53,12 @@ public class MainActivity extends AppCompatActivity {
 		 listView = (ListView) findViewById(R.id.list_commits);
 		 progressBar = (ProgressBar) findViewById(R.id.progress_bar);
 
-		 listView.setVisibility(View.GONE);
+		 if (progressBar != null) {
+			progressBar.setVisibility(View.VISIBLE);
+		 }
+		 if (listView != null) {
+			listView.setVisibility(View.GONE);
+		 }
 	  }
 
 	  @Override
