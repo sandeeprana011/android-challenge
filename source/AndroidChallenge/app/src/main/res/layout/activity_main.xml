@@ -8,10 +8,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.rana.androidchallenge.MainActivity">
+    tools:context="com.znsoftech.testing.HomeActivity">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_commits"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="2dp"
+        />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
 </RelativeLayout>
