@@ -67,6 +67,12 @@ public class Downloader {
 	  return response.toString();
    }
 
+
+   /**
+	* Check whether Internet is connected or not.
+	* @param context Working context
+	* @return true if network is available false if not available.
+	*/
    public static boolean isNetwork(Context context){
 	  ConnectivityManager cm=(ConnectivityManager)context.getSystemService(Context
 			  .CONNECTIVITY_SERVICE);
